@@ -1,0 +1,430 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "NE555"
+Date "2020-04-15"
+Rev "v1.1"
+Comp "hda/student"
+Comment1 "Chaithra Mahadeva"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R3
+U 1 1 5E96B940
+P 4350 1800
+F 0 "R3" H 4420 1846 50  0000 L CNN
+F 1 "10k" H 4420 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4280 1800 50  0001 C CNN
+F 3 "~" H 4350 1800 50  0001 C CNN
+	1    4350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E96D376
+P 4350 1200
+F 0 "D1" V 4389 1083 50  0000 R CNN
+F 1 "LED Green" V 4298 1083 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4350 1200 50  0001 C CNN
+F 3 "~" H 4350 1200 50  0001 C CNN
+	1    4350 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5E96E47A
+P 4350 2150
+F 0 "#PWR010" H 4350 1900 50  0001 C CNN
+F 1 "GND" H 4355 1977 50  0000 C CNN
+F 2 "" H 4350 2150 50  0001 C CNN
+F 3 "" H 4350 2150 50  0001 C CNN
+	1    4350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:NE555 U1
+U 1 1 5E96E9E2
+P 2500 3350
+F 0 "U1" H 2500 3931 50  0000 C CNN
+F 1 "NE555" H 2500 3840 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 2500 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 2500 3350 50  0001 C CNN
+	1    2500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E974431
+P 3550 1200
+F 0 "C1" H 3665 1246 50  0000 L CNN
+F 1 "100n" H 3665 1155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 3588 1050 50  0001 C CNN
+F 3 "~" H 3550 1200 50  0001 C CNN
+	1    3550 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E9752CB
+P 3550 1650
+F 0 "#PWR06" H 3550 1400 50  0001 C CNN
+F 1 "GND" H 3555 1477 50  0000 C CNN
+F 2 "" H 3550 1650 50  0001 C CNN
+F 3 "" H 3550 1650 50  0001 C CNN
+	1    3550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E975523
+P 2750 1750
+F 0 "#PWR03" H 2750 1500 50  0001 C CNN
+F 1 "GND" V 2755 1622 50  0000 R CNN
+F 2 "" H 2750 1750 50  0001 C CNN
+F 3 "" H 2750 1750 50  0001 C CNN
+	1    2750 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E975DF2
+P 3650 2900
+F 0 "R1" H 3720 2946 50  0000 L CNN
+F 1 "15k" H 3720 2855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3580 2900 50  0001 C CNN
+F 3 "~" H 3650 2900 50  0001 C CNN
+	1    3650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E97603F
+P 3650 3700
+F 0 "R2" H 3720 3746 50  0000 L CNN
+F 1 "15k" H 3720 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3580 3700 50  0001 C CNN
+F 3 "~" H 3650 3700 50  0001 C CNN
+	1    3650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5E976B6C
+P 3650 4750
+F 0 "#PWR08" H 3650 4500 50  0001 C CNN
+F 1 "GND" H 3655 4577 50  0000 C CNN
+F 2 "" H 3650 4750 50  0001 C CNN
+F 3 "" H 3650 4750 50  0001 C CNN
+	1    3650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5E97727C
+P 4850 3150
+F 0 "D3" H 4843 2895 50  0000 C CNN
+F 1 "LED Red" H 4843 2986 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm-3" H 4850 3150 50  0001 C CNN
+F 3 "~" H 4850 3150 50  0001 C CNN
+	1    4850 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E977AC7
+P 5450 3150
+F 0 "R4" V 5243 3150 50  0000 C CNN
+F 1 "330" V 5334 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 5380 3150 50  0001 C CNN
+F 3 "~" H 5450 3150 50  0001 C CNN
+	1    5450 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5E977D4D
+P 5750 3150
+F 0 "#PWR011" H 5750 2900 50  0001 C CNN
+F 1 "GND" V 5755 3022 50  0000 R CNN
+F 2 "" H 5750 3150 50  0001 C CNN
+F 3 "" H 5750 3150 50  0001 C CNN
+	1    5750 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5E978355
+P 1700 1150
+F 0 "J1" H 1808 1331 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1808 1240 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1700 1150 50  0001 C CNN
+F 3 "~" H 1700 1150 50  0001 C CNN
+	1    1700 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1350 4350 1650
+Wire Wire Line
+	4350 1950 4350 2150
+Wire Wire Line
+	3550 1350 3550 1650
+Wire Wire Line
+	1900 1150 2300 1150
+Wire Wire Line
+	2500 1150 2500 1000
+Wire Wire Line
+	1300 3550 2000 3550
+Wire Wire Line
+	3000 3150 4250 3150
+Wire Wire Line
+	3650 2650 3650 2750
+Wire Wire Line
+	3650 3050 3650 3350
+Wire Wire Line
+	4500 3350 4500 3400
+Wire Wire Line
+	3650 3850 3650 4000
+Wire Wire Line
+	3000 3550 3000 4000
+Wire Wire Line
+	3000 4000 3650 4000
+Connection ~ 3650 4000
+Wire Wire Line
+	3650 4000 3650 4150
+Wire Wire Line
+	4500 3700 4500 4000
+Wire Wire Line
+	4500 4000 4250 4000
+Wire Wire Line
+	5000 3150 5300 3150
+Wire Wire Line
+	5600 3150 5750 3150
+Wire Wire Line
+	1750 3150 2000 3150
+Text Label 1800 3150 0    50   ~ 0
+THRES
+Text Label 3100 4000 0    50   ~ 0
+THRES
+Wire Wire Line
+	3000 3350 3650 3350
+Connection ~ 3650 3350
+Wire Wire Line
+	3650 3350 3650 3550
+Wire Wire Line
+	4500 3350 3650 3350
+NoConn ~ 2000 3350
+$Comp
+L power:GND #PWR0101
+U 1 1 5E9814C3
+P 2500 3900
+F 0 "#PWR0101" H 2500 3650 50  0001 C CNN
+F 1 "GND" H 2505 3727 50  0000 C CNN
+F 2 "" H 2500 3900 50  0001 C CNN
+F 3 "" H 2500 3900 50  0001 C CNN
+	1    2500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 850  4350 1050
+Wire Wire Line
+	2750 1750 2750 1250
+Wire Wire Line
+	2750 1250 2600 1250
+Wire Wire Line
+	3550 850  3550 1050
+Wire Wire Line
+	2500 3750 2500 3900
+Wire Wire Line
+	3650 4450 3650 4750
+Wire Wire Line
+	2500 2700 2500 2950
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E989B04
+P 2300 1150
+F 0 "#FLG0101" H 2300 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 2300 1323 50  0000 C CNN
+F 2 "" H 2300 1150 50  0001 C CNN
+F 3 "~" H 2300 1150 50  0001 C CNN
+	1    2300 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 1150
+Wire Wire Line
+	2300 1150 2500 1150
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E98A1F2
+P 2600 1250
+F 0 "#FLG0102" H 2600 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 1423 50  0000 C CNN
+F 2 "" H 2600 1250 50  0001 C CNN
+F 3 "~" H 2600 1250 50  0001 C CNN
+	1    2600 1250
+	-1   0    0    1   
+$EndComp
+Connection ~ 2600 1250
+Wire Wire Line
+	2600 1250 2300 1250
+$Comp
+L Device:CP C2
+U 1 1 5E98EB88
+P 3650 4300
+F 0 "C2" H 3768 4346 50  0000 L CNN
+F 1 "110u" H 3768 4255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3688 4150 50  0001 C CNN
+F 3 "~" H 3650 4300 50  0001 C CNN
+	1    3650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0102
+U 1 1 5E98F439
+P 4350 850
+F 0 "#PWR0102" H 4350 700 50  0001 C CNN
+F 1 "+9V" H 4365 1023 50  0000 C CNN
+F 2 "" H 4350 850 50  0001 C CNN
+F 3 "" H 4350 850 50  0001 C CNN
+	1    4350 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0103
+U 1 1 5E98FCE5
+P 3550 850
+F 0 "#PWR0103" H 3550 700 50  0001 C CNN
+F 1 "+9V" H 3565 1023 50  0000 C CNN
+F 2 "" H 3550 850 50  0001 C CNN
+F 3 "" H 3550 850 50  0001 C CNN
+	1    3550 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0104
+U 1 1 5E990452
+P 2500 1000
+F 0 "#PWR0104" H 2500 850 50  0001 C CNN
+F 1 "+9V" V 2515 1128 50  0000 L CNN
+F 2 "" H 2500 1000 50  0001 C CNN
+F 3 "" H 2500 1000 50  0001 C CNN
+	1    2500 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+9V #PWR0105
+U 1 1 5E990959
+P 2500 2700
+F 0 "#PWR0105" H 2500 2550 50  0001 C CNN
+F 1 "+9V" H 2515 2873 50  0000 C CNN
+F 2 "" H 2500 2700 50  0001 C CNN
+F 3 "" H 2500 2700 50  0001 C CNN
+	1    2500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0106
+U 1 1 5E99126E
+P 3650 2650
+F 0 "#PWR0106" H 3650 2500 50  0001 C CNN
+F 1 "+9V" H 3665 2823 50  0000 C CNN
+F 2 "" H 3650 2650 50  0001 C CNN
+F 3 "" H 3650 2650 50  0001 C CNN
+	1    3650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0107
+U 1 1 5E9915F4
+P 1300 3550
+F 0 "#PWR0107" H 1300 3400 50  0001 C CNN
+F 1 "+9V" V 1315 3678 50  0000 L CNN
+F 2 "" H 1300 3550 50  0001 C CNN
+F 3 "" H 1300 3550 50  0001 C CNN
+	1    1300 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 5E99221E
+P 4500 3550
+F 0 "D2" V 4546 3471 50  0000 R CNN
+F 1 "1N4148" V 4455 3471 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4500 3375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4500 3550 50  0001 C CNN
+	1    4500 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 5E9969F0
+P 4250 4200
+F 0 "J5" V 4122 4280 50  0000 L CNN
+F 1 "Conn_01x01" V 4213 4280 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4250 4200 50  0001 C CNN
+F 3 "~" H 4250 4200 50  0001 C CNN
+	1    4250 4200
+	0    1    1    0   
+$EndComp
+Connection ~ 4250 4000
+Wire Wire Line
+	4250 4000 3650 4000
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 5E997472
+P 4700 3350
+F 0 "J6" H 4780 3392 50  0000 L CNN
+F 1 "Conn_01x01" H 4780 3301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4700 3350 50  0001 C CNN
+F 3 "~" H 4700 3350 50  0001 C CNN
+	1    4700 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 3350
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5E997C9B
+P 4250 2950
+F 0 "J4" V 4214 2862 50  0000 R CNN
+F 1 "Conn_01x01" V 4123 2862 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4250 2950 50  0001 C CNN
+F 3 "~" H 4250 2950 50  0001 C CNN
+	1    4250 2950
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4250 3150
+Wire Wire Line
+	4250 3150 4700 3150
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5E998507
+P 2000 1450
+F 0 "J2" V 1872 1530 50  0000 L CNN
+F 1 "Conn_01x01" V 1963 1530 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2000 1450 50  0001 C CNN
+F 3 "~" H 2000 1450 50  0001 C CNN
+	1    2000 1450
+	0    1    1    0   
+$EndComp
+Connection ~ 2000 1250
+Wire Wire Line
+	2000 1250 1900 1250
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5E99A7BE
+P 2300 1450
+F 0 "J3" V 2172 1530 50  0000 L CNN
+F 1 "Conn_01x01" V 2263 1530 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 2300 1450 50  0001 C CNN
+F 3 "~" H 2300 1450 50  0001 C CNN
+	1    2300 1450
+	0    1    1    0   
+$EndComp
+Connection ~ 2300 1250
+Wire Wire Line
+	2300 1250 2000 1250
+$EndSCHEMATC

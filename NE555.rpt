@@ -1,0 +1,11 @@
+** Drc report for C:\Users\user\Documents\KiCAD\NE555\NE555.kicad_pcb **
+** Created on  **
+
+** Found 1 DRC errors **
+ErrType(45): Courtyards overlap
+    @(85.000 mm, 101.000 mm): Footprint REF** on F.Cu
+    @(89.154 mm, 104.902 mm): Footprint J2 on F.Cu
+
+** Found 0 unconnected pads **
+
+** End of Report **
